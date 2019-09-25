@@ -3,7 +3,7 @@ services:
   - docker
 
 before_install:
-  -docker build -t yusrawasi/docker-react -f Dockerfile.dev .
+  - docker build -t yusrawasi/docker-react -f Dockerfile.dev .
 
 script:
-  -docker run yusrawasi/docker-react npm run test -- --coverages
+  - docker run yusrawasi/docker-react npm run test -- --coverages
